@@ -331,4 +331,4 @@ function display_summary {
 #check_tigera_pods
 #check_tier
 calico_diagnostics
-display_summary
+#display_summary
