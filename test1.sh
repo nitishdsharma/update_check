@@ -33,7 +33,7 @@ function update_calico_config_check {
 	    case $reply in
         	    [Yy]es) echo "Updating the script file ....."
 #                	    git pull origin master >/dev/null 2>&1 && echo "Update successfull";;
-                	    curl -O https://raw.githubusercontent.com/tigera-cs/calico-config-check/master/calico-cluster-check.sh;;
+                	    curl -O https://raw.githubusercontent.com/nitishdsharma/update_check/master/test1.sh;;
 	            [Nn]o) echo "No download done" ;;
         	        *) echo "Wrong answer. Print yes or no"
                 	   unset reply ;;
