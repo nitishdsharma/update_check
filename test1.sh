@@ -23,7 +23,7 @@ function update_calico_config_check {
 	currwd=`pwd`
 	filepath="$currwd/$0"
 	localfilesize=`stat -c %s $filepath`
-	remotefilesize=`curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/tigera-cs/calico-config-check/contents/calico-cluster-check.sh | grep size | awk '{print $2}' | awk -F , '{print $1}'`
+	remotefilesize=`curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/nitishdsharma/update_check/contents/test1.sh | grep size | awk '{print $2}' | awk -F , '{print $1}'`
 	echo $localfilesize $remotefilesize
 	if [[ "$localfilesize" -eq "$remotefilesize" ]]; then
 		echo "Script up to date"
